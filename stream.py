@@ -8,7 +8,7 @@ from tensorflow.keras.applications.vgg16 import preprocess_input as vgg16_prepro
 model = tf.keras.models.load_model("cat-vs-dog.h5")
 st.title('Simple Cat Dog Classifier')
 uploaded_file = st.file_uploader("Choose a image file", type=["jpg",'jpeg','png'])
-map_dict={0:'Cat',1:'Dog'}
+map_dict={1:'Dog',0:'Cat'}
 
 
 
